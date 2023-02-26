@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="864.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TrangChuController">
+   <top>
+      <AnchorPane fx:id="pane1" prefHeight="60.0" prefWidth="864.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #0A4969;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView fill="RED" glyphName="SIGN_OUT" layoutX="838.0" layoutY="20.0" onMouseClicked="#handleLogout" size="20" />
+               </children>
+            </Pane>
+            <HBox accessibleRole="LIST_ITEM" alignment="CENTER" layoutY="31.0" prefHeight="30.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="50.0" prefWidth="1265.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="359.0" layoutY="2.0" prefHeight="31.0" prefWidth="166.0" text="MONO TEAM">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIconView glyphName="LAPTOP" layoutX="359.0" layoutY="23.0" size="16" text="" />
+                           </children>
+                           <padding>
+                              <Insets left="30.0" right="30.0" />
+                           </padding>
+                        </Pane>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="699.0" prefWidth="150.0" style="-fx-background-color: #0A4969;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="50.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane prefHeight="120.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="trangchu_btn" layoutY="27.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 0px 3px; -fx-cursor: hand;" text="   Trang chủ" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="14.0" layoutY="55.0" size="20" text="" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="hokhau_pane" prefHeight="120.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="hokhau_btn" layoutY="22.0" mnemonicParsing="false" onAction="#switchToHoKhauScene" prefHeight="43.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-border-width: 0px 0px 0px 3px; -fx-cursor: hand;" text="Hộ khẩu" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="14.0" layoutY="49.0" size="16" text="" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="nhankhau_pane" prefHeight="120.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="nhankhau_btn" layoutY="24.0" mnemonicParsing="false" onAction="#switchToNhanKhauScene" prefHeight="39.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-border-width: 0px 0px 0px 3px; -fx-cursor: hand;" text="    Nhân khẩu" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="14.0" layoutY="49.0" size="16" text="" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="thongke_pane" prefHeight="120.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="thongke_btn" layoutY="24.0" mnemonicParsing="false" onAction="#switchToThongKeScene" prefHeight="39.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-border-width: 0px 0px 0px 3px; -fx-cursor: hand;" text="  Thống kê" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="TASKS" layoutX="14.0" layoutY="49.0" size="16" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="quanlysh_pane" prefHeight="120.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="quanlysh_btn" layoutY="24.0" mnemonicParsing="false" onAction="#switchToQLSinhHoatScene" prefHeight="39.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-border-width: 0px 0px 0px 3px; -fx-cursor: hand;" text="    Quản lý sự kiện" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" layoutX="14.0" layoutY="49.0" size="16" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="quanlydiem_pane" prefHeight="120.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="quanlysh_btn1" layoutY="24.0" mnemonicParsing="false" onAction="#switchToTinhDiemScene" prefHeight="39.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-border-width: 0px 0px 0px 3px; -fx-cursor: hand;" text=" Điểm danh" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR" layoutX="14.0" layoutY="49.0" size="16" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="53.0" layoutY="122.0" text="Số nhân khẩu trên địa bàn">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="176.0" text="Số hộ khẩu trên địa bàn">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="64.0" text="Tổ trưởng">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="toTruong" layoutX="387.0" layoutY="60.0" text="Ông: Nguyễn Văn A">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="hoKhau" layoutX="387.0" layoutY="172.0" prefWidth="40.0" text="abc">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="nhanKhau" layoutX="387.0" layoutY="118.0" prefWidth="40.0" text="abc">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

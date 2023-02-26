@@ -1,0 +1,63 @@
+/* 
+    Created on : Oct 22, 2022, 9:42:11 AM
+    Author     : Bui Anh Tuan
+    Teacher    : Trinh Thanh Trung
+    Class      : Nhap mon cong nghe phan mem - code: 136813
+*/
+
+#trangchu_btn:hover,
+#thongke_btn:hover,
+#quanlysh_btn:hover,
+#hokhau_btn:hover,
+#nhankhau_btn:hover{     
+    -fx-border-width: 0px 0px 0px 3px !important;
+    -fx-border-color: white !important;
+    -fx-cursor: hand;
+    -fx-background-color: rgba(0, 0, 0,0.2) !important;
+}
+
+#logout_btn:pressed {
+    -fx-background-color: transparent !important;
+    -fx-text-fill: black;
+}
+
+#add_btn:hover {
+    -fx-border-width: 0px 0px 3px 0px !important;
+    -fx-border-color: black !important;
+    -fx-cursor: hand;
+}
+
+#edit_btn:hover {
+    -fx-border-width: 0px 0px 3px 0px !important;
+    -fx-border-color: black !important;
+    -fx-cursor: hand;
+}
+
+#account_input,
+#password_input {
+    -fx-text-fill: #0a4969;
+}
+
+#account_input:focused {
+    -fx-border-color: #0A4969 !important;
+}
+
+#password_input:focused {
+    -fx-border-color: #0A4969 !important;
+}
+
+.combo-box {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+ 
+
+.table-view { -fx-focus-color: transparent; }
+
+.button:pressed {
+    -fx-background-color: rgba(10, 73, 105,0.8) !important;
+}
+
+
+

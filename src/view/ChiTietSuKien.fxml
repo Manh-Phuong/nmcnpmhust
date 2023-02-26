@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="521.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuanLySHManageController.ChiTietSuKienController">
+   <center>
+      <Pane prefHeight="321.0" prefWidth="531.0" style="-fx-border-color: #ccc; -fx-border-width: 5px;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="48.0" layoutY="38.0" text="Tên sự kiện">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="289.0" layoutY="91.0" text="Thời gian">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="91.0" prefHeight="17.0" prefWidth="63.0" text="Địa điểm">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="203.0" text="Nội dung">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tenSuKien" layoutX="125.0" layoutY="34.0" />
+            <TextField fx:id="thoiGian" layoutX="358.0" layoutY="88.0" />
+            <TextField fx:id="diaDiem" layoutX="125.0" layoutY="88.0" />
+            <Button layoutX="238.0" layoutY="275.0" mnemonicParsing="false" onAction="#updateSuKien" prefHeight="32.0" prefWidth="82.0" style="-fx-background-color: #0A4969;" text="Cập nhật" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <TextArea fx:id="noiDung" layoutX="126.0" layoutY="177.0" prefHeight="91.0" prefWidth="306.0" style="-fx-wrap-text: true;" />
+            <Label layoutX="48.0" layoutY="142.0" prefHeight="17.0" prefWidth="63.0" text="Bắt đầu">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="batDau" layoutX="125.0" layoutY="139.0" />
+            <Label layoutX="289.0" layoutY="142.0" prefHeight="17.0" prefWidth="63.0" text="Kết thúc">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ketThuc" layoutX="358.0" layoutY="139.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
